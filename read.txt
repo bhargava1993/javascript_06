@@ -1,0 +1,190 @@
+javascript:
+-------------
+
+
+React.js, next.js, angular.js, vue.js
+
+
+node.js, nest.js --> backend
+
+
+max 40min: javascript
+
+
+
+javascript:
+-----------
+
+1. variables
+2. data types
+
+
+
+
+rice --> water --> boul
+
+
+
+water --> container, water battle, boul, can,
+
+sugur
+salt
+
+
+
+
+numbers
+alphabets - a , group of char--> word, group of words --> sentence
+symbols
+
+
+data types: 
+------------
+Primitive datatypes:
+---------------------
+1. numbers
+
+2. string 
+
+3. symbol
+
+4. undefind
+
+5. null
+
+6. boolen
+
+
+non-Primitive types:
+--------------------
+7. object
+
+8. array
+
+9. function
+
+
+how to write javascript program:
+--------------------------------
+
+1. you have to install node.js in your system
+
+node.js is runtime environmet
+
+2. you have to crete a file with ".js" extension
+
+ex:
+samle.js, add.js, multiplication.js
+
+3. to run javascript file
+
+node <filename>
+
+ex: node sample.js
+
+
+1.single value ("string", number)
+
+2. array ["string", "number", {},[]]
+
+3. objects :{key: value}
+
+-----------------------------------------------------------
+
+operators:
+----------
+
++
+-
+*
+/ - division
+% - modulus division
+**
+
+
+----------
+++
+--
+
+--------------------------
+
+comparision operators:
+
+=
+==
+===
+
+!=
+!==
+
+<
+>
+<=
+>=
+
+conditional statements:
+--------------------------
+()---> paranthciss
+
+normal if/else:
+----------------
+if(){
+
+}else{
+
+}
+
+ladder if/else:
+------------------
+if(){
+
+}else if(){
+
+}else if(){
+
+}else if(){
+
+}else{
+
+}
+
+
+nested if/else:
+------------------
+if(){
+
+    if(){
+
+    }else{
+
+    }
+}else{
+
+}
+
+
+
+
+&& --- all condtion must should be true 
+|| --- any condition should success
+!  --- is one condition get wrong every thing wrong
+
+
+
+true && true -- true
+
+true && false -- false
+
+true && true && false -- false
+
+
+true || false -- true
+
+true || false || true -- true
+
+
+
+
+
+
+
