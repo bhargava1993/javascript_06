@@ -1,0 +1,140 @@
+// Array:
+
+// methods: push, pop, shift, unshift
+
+
+// var newArray = [2, 4, 6, 9, 10];
+
+// console.log("before---",newArray);
+
+// //ending of an array
+// newArray.pop()
+// newArray.push("bhargava")
+
+// // Staring of the array
+// newArray.shift()
+// newArray.unshift(120)
+
+// console.log("after---",newArray);
+
+
+
+var newArray = ["apple", "banana", "orange", "watermelon", "grapes", "mango",
+    "blueberry", "blackberry", "raspberry", "strawberry"];
+
+
+// console.log(newArray.reverse());
+
+// console.log(newArray[0])
+// console.log(newArray[1])
+// console.log(newArray[2])
+// console.log(newArray[3])
+// console.log(newArray[4])
+
+
+// for(declaration; condition; increment/decrement){
+// }
+
+
+// console.log(newArray.length);
+
+// for(var i=0 ; i <= newArray.length-1; i++){
+//     console.log(newArray[i]);
+// }
+
+// reverse array
+// var reversarray=[];
+
+// for( var i=newArray.length-1; i >= 0 ;i--){
+//     // console.log(newArray[i]);
+//     reversarray.push(newArray[i])
+// }
+
+// console.log(reversarray);
+
+
+// replace "orange" with "watermelon"
+
+
+// for(var i=0; i<=newArray.length;i++){
+
+//    if(newArray[i] === "orange"){
+//         newArray[i] = "watermelon"
+//    }
+
+// }
+
+// console.log(newArray);
+
+
+// var fruitName = "blackberry";
+
+// for(var i=0 ; i <= fruitName.length-1; i++){
+//     console.log(fruitName[i]);
+// }
+
+// var reversString="";
+
+// for(var i=fruitName.length-1; i>=0 ;i--){
+//     // console.log(fruitName[i]);
+
+//     reversString = reversString + fruitName[i];
+//     // console.log(reversString);
+// }
+
+// console.log(reversString)
+
+
+// console.log( y +"1" )
+
+// var name="bhargava";
+
+// name="jeswanth";
+
+// console.log(name);
+
+
+
+
+//polindrome 
+
+// 1221 
+// 2432
+
+// Level
+// Madam
+// Minim
+// Mom
+
+
+// anagram
+
+// missing numbers:
+var numbrs = [ 1,4,6,8,1,12,13,20]
+
+
+var numberArray = [1, 30, 45, 100, 60, 75, 900, 4, 11, 1000, 56, 89, 950];
+
+// console.log(Math.max(...numberArray));
+
+var maxNumber = numberArray[0];
+
+var secondMaxNumber=numberArray[0];
+
+for (var i = 0; i <= numberArray.length - 1; i++) {
+
+    // console.log(numberArray[i])
+
+    if (numberArray[i] > maxNumber) {
+        secondMaxNumber = maxNumber;
+        maxNumber = numberArray[i];
+    }else if(numberArray[i] < maxNumber && numberArray[i] > secondMaxNumber){
+        secondMaxNumber = numberArray[i];
+    }
+
+}
+
+console.log(maxNumber);
+
+console.log("secondMaxNumber---",secondMaxNumber);
+
