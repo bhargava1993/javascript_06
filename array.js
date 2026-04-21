@@ -108,11 +108,15 @@ var newArray = ["apple", "banana", "orange", "watermelon", "grapes", "mango",
 
 
 // anagram
+//factors
+//factorial
+//prime
 
 // missing numbers:
-var numbrs = [ 1,4,6,8,1,12,13,20]
+var numbrs = [1,3,6,8,9,10]
 
 
+// find maxnumber
 var numberArray = [1, 30, 45, 100, 60, 75, 900, 4, 11, 1000, 56, 89, 950];
 
 // console.log(Math.max(...numberArray));
