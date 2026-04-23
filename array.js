@@ -113,7 +113,7 @@ var newArray = ["apple", "banana", "orange", "watermelon", "grapes", "mango",
 //prime
 
 // missing numbers:
-var numbrs = [1,3,6,8,9,10]
+var numbrs = [1, 3, 6, 8, 9, 10]
 
 
 // find maxnumber
@@ -123,7 +123,7 @@ var numberArray = [1, 30, 45, 100, 60, 75, 900, 4, 11, 1000, 56, 89, 950];
 
 var maxNumber = numberArray[0];
 
-var secondMaxNumber=numberArray[0];
+var secondMaxNumber = numberArray[0];
 
 for (var i = 0; i <= numberArray.length - 1; i++) {
 
@@ -132,13 +132,47 @@ for (var i = 0; i <= numberArray.length - 1; i++) {
     if (numberArray[i] > maxNumber) {
         secondMaxNumber = maxNumber;
         maxNumber = numberArray[i];
-    }else if(numberArray[i] < maxNumber && numberArray[i] > secondMaxNumber){
+    } else if (numberArray[i] < maxNumber && numberArray[i] > secondMaxNumber) {
         secondMaxNumber = numberArray[i];
     }
 
 }
 
-console.log(maxNumber);
+// console.log(maxNumber);
 
-console.log("secondMaxNumber---",secondMaxNumber);
+// console.log("secondMaxNumber---",secondMaxNumber);
 
+
+
+//find duplicates in array
+let fruitsArray = ["blackberry","apple", "banana", "orange",
+    "watermelon","raspberry","orange", "mango","grapes","raspberry",
+    "blueberry", "blackberry","apple", "raspberry",
+    "strawberry","orange","blackberry","raspberry"];
+
+// console.log(numArray.reverse())
+
+console.log(fruitsArray.includes("grapes"));
+
+console.log("before fruitsArray----", fruitsArray)
+let isExists = true;
+// here i am reaind my array elements
+for (let i = 0; i <= fruitsArray.length - 1; i++) {
+    console.log(i,  fruitsArray.length - 1);
+// here i am checking grapes elements exist or not
+    if ("grapes" === fruitsArray[i]) {
+        console.log("grapes exists", i);
+        isExists = false;
+    }
+
+    if (i === fruitsArray.length - 1 && isExists) {
+        console.log("inside for loop")
+        // if (isExists) {
+            fruitsArray.push("grapes");
+        // }
+    }
+}
+
+console.log("isexists===", isExists)
+
+console.log("after fruitsArray----", fruitsArray)
