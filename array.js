@@ -145,34 +145,79 @@ for (var i = 0; i <= numberArray.length - 1; i++) {
 
 
 //find duplicates in array
-let fruitsArray = ["blackberry","apple", "banana", "orange",
-    "watermelon","raspberry","orange", "mango","grapes","raspberry",
-    "blueberry", "blackberry","apple", "raspberry",
-    "strawberry","orange","blackberry","raspberry"];
+let fruitsArray = ["blackberry", "apple", "banana", "orange",
+    "watermelon", "raspberry", "orange", "mango", "grapes", "raspberry",
+    "blueberry", "blackberry", "apple", "raspberry",
+    "strawberry", "orange", "blackberry", "raspberry",
+"jesvanth", "vidya"];
+
 
 // console.log(numArray.reverse())
 
-console.log(fruitsArray.includes("grapes"));
+// console.log(fruitsArray.includes("grapes"));
 
-console.log("before fruitsArray----", fruitsArray)
+// console.log("before fruitsArray----", fruitsArray)
 let isExists = true;
 // here i am reaind my array elements
 for (let i = 0; i <= fruitsArray.length - 1; i++) {
-    console.log(i,  fruitsArray.length - 1);
-// here i am checking grapes elements exist or not
+    // console.log(i, fruitsArray.length - 1);
+    // here i am checking grapes elements exist or not
     if ("grapes" === fruitsArray[i]) {
-        console.log("grapes exists", i);
+        // console.log("grapes exists", i);
         isExists = false;
     }
 
     if (i === fruitsArray.length - 1 && isExists) {
-        console.log("inside for loop")
+        // console.log("inside for loop")
         // if (isExists) {
-            fruitsArray.push("grapes");
+        fruitsArray.push("grapes");
         // }
     }
 }
 
-console.log("isexists===", isExists)
+// console.log("isexists===", isExists)
 
-console.log("after fruitsArray----", fruitsArray)
+// console.log("after fruitsArray----", fruitsArray)
+
+
+
+console.log("fruitsArray---", fruitsArray.includes("apple"));
+// console.log("fruitsArray---unique-", [...new Set(fruitsArray)]);
+
+let uniqueArray=[];
+let repetedvalues=[];
+
+let notrepetedValues=[];
+
+for(let i=0; i<=fruitsArray.length-1 ;i++){
+// console.log("i---",i, fruitsArray.length, fruitsArray[i])
+
+    if(uniqueArray.includes(fruitsArray[i])){
+        repetedvalues.push(fruitsArray[i])
+    }else{
+        uniqueArray.push(fruitsArray[i])
+    }
+}
+console.log("fruitsArray---", fruitsArray);
+// console.log("uniqueArray---",uniqueArray);
+// console.log("repetedvalues---", repetedvalues);
+
+
+
+// {key: value}
+let uniqueObj={}
+
+
+
+for(let i=0; i<=fruitsArray.length-1;i++){
+
+    if(uniqueObj[fruitsArray[i]]){
+        uniqueObj[fruitsArray[i]] = uniqueObj[fruitsArray[i]] +1
+    }else{
+        uniqueObj[fruitsArray[i]] =1
+    }
+    
+}
+
+console.log("uniqueObj--",uniqueObj)
+console.log("uniqueObj--",Object.keys(uniqueObj))
