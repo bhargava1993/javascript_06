@@ -1,0 +1,26 @@
+qutoes:
+-------
+1. single -''
+2. double -""
+3. template litarals -`` 
+
+types of functions:
+-------------------
+1. normal functions
+2. arrow functions
+3. function expressions
+4. anonymous function
+5. callback function(asyncronus excution)
+6. function curring
+7. iiff-(immediatly invoked functions)
+8. higher order function
+9. pure/ impure functions
+10. recursive function 
+
+syntax: 
+
+function <function_name>(){
+
+    // bussiness logic
+    retrun "";
+}
