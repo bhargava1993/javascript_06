@@ -149,7 +149,7 @@ let fruitsArray = ["blackberry", "apple", "banana", "orange",
     "watermelon", "raspberry", "orange", "mango", "grapes", "raspberry",
     "blueberry", "blackberry", "apple", "raspberry",
     "strawberry", "orange", "blackberry", "raspberry",
-"jesvanth", "vidya"];
+    "jesvanth", "vidya"];
 
 
 // console.log(numArray.reverse())
@@ -184,17 +184,17 @@ for (let i = 0; i <= fruitsArray.length - 1; i++) {
 console.log("fruitsArray---", fruitsArray.includes("apple"));
 // console.log("fruitsArray---unique-", [...new Set(fruitsArray)]);
 
-let uniqueArray=[];
-let repetedvalues=[];
+let uniqueArray = [];
+let repetedvalues = [];
 
-let notrepetedValues=[];
+let notrepetedValues = [];
 
-for(let i=0; i<=fruitsArray.length-1 ;i++){
-// console.log("i---",i, fruitsArray.length, fruitsArray[i])
+for (let i = 0; i <= fruitsArray.length - 1; i++) {
+    // console.log("i---",i, fruitsArray.length, fruitsArray[i])
 
-    if(uniqueArray.includes(fruitsArray[i])){
+    if (uniqueArray.includes(fruitsArray[i])) {
         repetedvalues.push(fruitsArray[i])
-    }else{
+    } else {
         uniqueArray.push(fruitsArray[i])
     }
 }
@@ -205,19 +205,38 @@ console.log("fruitsArray---", fruitsArray);
 
 
 // {key: value}
-let uniqueObj={}
+let uniqueObj = {}
+
+let string = "jfknfknflkdsf jkasjlks fjdshflkjsdf jhdsLHFKSA"
+
+console.log(string.split(" "))
 
 
+// 121
+// 1221
+// MADAM
+// .
+// []
 
-for(let i=0; i<=fruitsArray.length-1;i++){
 
-    if(uniqueObj[fruitsArray[i]]){
-        uniqueObj[fruitsArray[i]] = uniqueObj[fruitsArray[i]] +1
-    }else{
-        uniqueObj[fruitsArray[i]] =1
+for (let i = 0; i <= fruitsArray.length - 1; i++) {
+
+    if (uniqueObj[fruitsArray[i]]) {
+        uniqueObj[fruitsArray[i]] = uniqueObj[fruitsArray[i]] + 1
+    } else {
+        uniqueObj[fruitsArray[i]] = 1
     }
-    
+
 }
 
-console.log("uniqueObj--",uniqueObj)
-console.log("uniqueObj--",Object.keys(uniqueObj))
+// console.log("uniqueObj--", uniqueObj)
+// console.log("uniqueObj--", Object.keys(uniqueObj))
+
+longest polindrom:
+-------------------
+
+1. split and put it into array (split)
+2. you need to loop that array
+3. find polindrome
+4. word count (length)
+5. put object and find laragest polindrom

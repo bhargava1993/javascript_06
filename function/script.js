@@ -96,17 +96,115 @@ let add3 = name => `hello ${name}`;
 //     console.log("bhargava")
 // }, 1000)
 
-let i=0;
+// let i=0;
 
-function count(endValue){
+// function count(endValue){
    
 
-    count();
+//     count();
    
    
+// }
+
+// count(0)
+
+
+
+// function sample(a, name,fn){
+//     console.log("a--",a)
+//     console.log("name---",name)
+//     console.log("fn--",fn)
+
+//     return "smaple"
+// }
+
+// function sample2(){
+
+// }
+
+// function sample3(){
+
+//      let nameLess = ()=>{
+
+//     }
+
+//     return nameLess;
+
+// }
+
+// console.log(sample3())
+
+// sample(5,"bhargava", sample2)
+
+let myRadiusArray = [1,2,3,4,5]
+ let pi = 3.14;
+
+function caluculateArea( myRadiusArray){
+    
+    let result =[]
+    for(let val of myRadiusArray){
+         result.push(pi*val*val);
+    }
+    // let result = pi*radius*radius;
+
+    return result
+
 }
 
-count(0)
+// console.log(caluculateArea(myRadiusArray));
+
+function circumference(radius){
+    return 2*pi*radius;
+}
+
+function findDiameter(radius){
+    return 2*radius;
+}
+
+// console.log(caluculateArea(5))
+
+function calculate(myRadiusArray, logic){
+
+    let result=[];
+    for(let val of myRadiusArray){
+        result.push(logic(val))
+    }
+
+    return result;
+
+}
+
+
+// console.log(calculate(myRadiusArray, caluculateArea))
+
+// console.log(calculate(myRadiusArray, findDiameter))
+
+// console.log(calculate(myRadiusArray, circumference))
+
+
+// simple calculator
+// -------------------------------
+function addition(a,b){
+    return a+b;
+}
+
+function sub(a,b){
+    return a-b;
+}
+
+function mul(a,b){
+    return a*b;
+}
+
+function caluculator(input1, input2, logic){
+    // console.log(logic)
+    return logic(input1,input2)
+
+}
+
+console.log(caluculator(2,3,sub));
+console.log(caluculator(2,3,addition));
+console.log(caluculator(2,3,mul));
 
 
 
