@@ -122,15 +122,15 @@ let add3 = name => `hello ${name}`;
 
 // }
 
-// function sample3(){
+function sample3(){
 
-//      let nameLess = ()=>{
+     let nameLess = ()=>{
 
-//     }
+    }
 
-//     return nameLess;
+    return nameLess;
 
-// }
+}
 
 // console.log(sample3())
 
