@@ -17,6 +17,8 @@ types of functions:
 9. pure/ impure functions
 10. recursive function 
 
+most import topic:
+-------------------------
 closuers
 
 syntax: 
