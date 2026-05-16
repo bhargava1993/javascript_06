@@ -13,16 +13,15 @@
 
 
 
-// function outer() {
-//     let property = 10;
+function outer() {
+    let property = 10;
 
-//     return function inner() {
-//         property++;
-//         console.log("inside counter function", property);
-//         return property;
-//     }
-
-// }
+    return function inner() {
+        property++;
+        console.log("inside counter function", property);
+        return property;
+    }
+}
 
 
 // let counter = outer();
