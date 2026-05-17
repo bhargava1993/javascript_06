@@ -25,24 +25,24 @@
 // axios -->
 
 
-// function getUser(){
+function getUser(){
 
-//     let data;
+    let data;
 
-//     fetch("https://dummyjson.com/users")
-//     .then(response => response.json())
-//     .then(result => {
-//         data = result;
-//         // console.log("data-------",data)
-//     })
-//     .catch((error)=> {
-//         console.log("error----",error)
-//     });
+    fetch("https://dummyjson.com/users")
+    .then(response => response.json())
+    .then(result => {
+        data = result;
+        // console.log("data-------",data)
+    })
+    .catch((error)=> {
+        console.log("error----",error)
+    });
 
-//     return data;
-// }
+    return data;
+}
 
-// console.log(getUser());
+console.log(getUser());
 
 
 
